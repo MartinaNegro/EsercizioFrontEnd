@@ -2,8 +2,6 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, ConversationHandler, RegexHandler
 from secret import bot_token
 
-logged_user = []
-
 def welcome(update, context):
     msg = '''Welcome in <b>My Bot</b>'''
     update.message.reply_text(msg, parse_mode='HTML')
